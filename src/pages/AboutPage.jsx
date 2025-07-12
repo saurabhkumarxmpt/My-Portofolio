@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 const AboutPage = () => {
   return (
     <>
-      <div className="relative bg-[url('/about-page-image.png')] min-h-screen bg-cover bg-center text-white">
+      <div className="relative bg-[url('/about-page-image.jpg')] min-h-screen bg-cover bg-center text-white">
         <Navbar />
 
         {/* Main Left-Side Content with margin from top and left */}

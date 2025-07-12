@@ -1,6 +1,8 @@
 import Navbar from "../components/Navbar";
 import { motion } from "motion/react"
 import { FaGithub, FaLinkedin,FaYoutube,FaStackOverflow   } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
 
@@ -85,7 +87,7 @@ const HomePage = () => {
         className="text-base md:text-lg font-Nunito max-w-xl"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.6, duration: 0.5 }}
+        transition={{ delay: 0.5, duration: 0.4 }}
       >
         Turning ideas into real-world web apps with clean code and modern design.
       </motion.p>
@@ -95,20 +97,20 @@ const HomePage = () => {
         className="mt-6 flex gap-4"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.8, duration: 0.4 }}
+        transition={{ delay: 0.7, duration: 0.4 }}
       >
-        <a
-          href="#projects"
-          className="text-gray-300 px-6 py-2 rounded-xl font-Nunito transition backdrop-blur-xl bg-white/12"
+        <Link
+          to="/projects"
+          className="text-white px-6 py-2 rounded-xl font-Nunito bg-white/10 backdrop-blur-xl transition duration-300 ease-in-out transform hover:scale-105 hover:bg-white/20 hover:shadow-md hover:ring-1 hover:ring-cyan-400"
         >
           View Projects
-        </a>
-        <a
-          href="#contact"
-          className="px-6 py-2 rounded-xl text-gray-300 font-Nunito transition backdrop-blur-xl bg-white/12"
+        </Link>
+        <Link
+          to="/contact"
+          className="text-white px-6 py-2 rounded-xl font-Nunito bg-white/10 backdrop-blur-xl transition duration-300 ease-in-out transform hover:scale-105 hover:bg-white/20 hover:shadow-md hover:ring-1 hover:ring-cyan-400"
         >
           Contact Me
-        </a>
+        </Link>
       </motion.div>
         </div>
       </div>
@@ -116,7 +118,7 @@ const HomePage = () => {
       className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50"
        initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.1, duration: 0.5 }}
+        transition={{ delay: 0.9, duration: 0.5 }}
       >
       <div className="flex items-center justify-center gap-6 bg-white/10 backdrop-blur-md px-6 py-3 rounded-full shadow-lg">
         <a
@@ -150,6 +152,14 @@ const HomePage = () => {
           className="text-white text-2xl hover:text-orange-400 transition-all duration-300 hover:px-4 "
         >
           <FaStackOverflow />
+        </a>
+        <a
+          href="mailto:saurabhkumarxmpt@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white text-2xl hover:text-blue-400 transition-all duration-300 hover:px-4 "
+        >
+          <MdOutlineEmail />
         </a>
       </div>
     </motion.div>

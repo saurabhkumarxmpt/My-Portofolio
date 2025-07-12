@@ -9,8 +9,8 @@ const HomePage = () => {
       visible: {
         opacity: 1,
         transition: {
-          delayChildren: 0.2,
-          staggerChildren: 0.07,
+          delayChildren: 0.3,
+          staggerChildren: 0.06,
         },
       },
     };
@@ -22,7 +22,7 @@ const HomePage = () => {
         y: 0,
         transition: {
           ease: "easeOut",
-          duration: 0.5,
+          duration: 0.4,
         },
       },
     };
@@ -85,7 +85,7 @@ const HomePage = () => {
         className="text-base md:text-lg font-Nunito max-w-xl"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.2, duration: 0.6 }}
+        transition={{ delay: 0.6, duration: 0.5 }}
       >
         Turning ideas into real-world web apps with clean code and modern design.
       </motion.p>
@@ -95,7 +95,7 @@ const HomePage = () => {
         className="mt-6 flex gap-4"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.6, duration: 0.5 }}
+        transition={{ delay: 0.8, duration: 0.4 }}
       >
         <a
           href="#projects"
@@ -116,7 +116,7 @@ const HomePage = () => {
       className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50"
        initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.6, duration: 0.5 }}
+        transition={{ delay: 1.1, duration: 0.5 }}
       >
       <div className="flex items-center justify-center gap-6 bg-white/10 backdrop-blur-md px-6 py-3 rounded-full shadow-lg">
         <a

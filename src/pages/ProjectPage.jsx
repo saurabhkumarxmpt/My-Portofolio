@@ -74,10 +74,10 @@ const ProjectCard = ({ project }) => {
         </div>
         <div className="flex gap-6 mt-2">
           <a href={project.codeLink} target="_blank" rel="noopener noreferrer">
-            <button className="px-4 py-2 bg-white/10 backdrop-blur-md rounded-md text-sm font-medium shadow">Code</button>
+            <button className="px-4 py-2 bg-white/10 backdrop-blur-md rounded-md text-sm font-medium shadow transition duration-300 ease-in-out transform  hover:scale-105 hover:bg-white/20 hover:shadow-md hover:ring-1 hover:ring-cyan-400">Code</button>
           </a>
           <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-            <button className="px-4 py-2 bg-white/10 backdrop-blur-md rounded-md text-sm font-medium shadow">Live Link</button>
+            <button className="px-4 py-2 bg-white/10 backdrop-blur-md rounded-md text-sm font-medium shadow transition duration-300 ease-in-out transform  hover:scale-105 hover:bg-white/20 hover:shadow-md hover:ring-1 hover:ring-cyan-400">Live Link</button>
           </a>
         </div>
       </div>

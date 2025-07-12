@@ -27,6 +27,12 @@ const AboutPage = () => {
             >
               I'm a passionate <span className="text-cyan-600 font-semibold">MERN Stack Developer</span> with 1 year of hands-on experience building real-world web applications. I focus on clean code and practical functionality more than flashy design. I work with <span className="text-cyan-600">React.js</span>, <span className="text-cyan-600">Express.js</span>, <span className="text-cyan-600">MongoDB</span>, and <span className="text-cyan-600">MySQL</span> to build full-stack apps.
             </motion.p>
+            <motion.p
+            className="text-base md:text-lg leading-relaxed max-w-xl"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.7 }}
+            >Email: saurabhkumarxmpt@gmail.com</motion.p>
           </div>
         </div>
 

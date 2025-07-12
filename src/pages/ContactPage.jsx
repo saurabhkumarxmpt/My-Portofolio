@@ -1,7 +1,35 @@
+import { useRef } from "react"
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 import Navbar from "../components/Navbar";
 
 const ContactPage = () => {
+     const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_wx0hsje", // replace
+        "template_4lkl32z", // replace
+        form.current,
+        "iIgB8J1PIh3nG6nuv" // replace
+      )
+      .then(
+        (result) => {
+          console.log("Message sent ✅", result.text);
+          alert("Message sent successfully!");
+        },
+        (error) => {
+          console.log("Error ❌", error.text);
+          alert("Something went wrong!");
+        }
+      );
+
+    e.target.reset(); // clear form after submit
+  };
+
   return (
     <div className="bg-[url('/contact-page-image.jpg')] min-h-screen bg-cover bg-center text-white font-Nunito">
       <Navbar />
@@ -16,12 +44,13 @@ const ContactPage = () => {
           <h1 className="text-3xl font-bold text-center mb-8 text-white drop-shadow">
             Contact Me
           </h1>
-          <form className="space-y-6">
+          <form ref={form} onSubmit={sendEmail} className="space-y-6">
             <div>
               <label className="block text-sm mb-1">Name</label>
               <input
                 type="text"
                 placeholder="Your Name"
+                name="from_name"
                 className="w-full p-3 rounded bg-white/10 text-white placeholder-gray-300 outline-none focus:ring-2 focus:ring-cyan-600"
               />
             </div>
@@ -29,6 +58,7 @@ const ContactPage = () => {
               <label className="block text-sm mb-1">Email</label>
               <input
                 type="email"
+                name="from_email"
                 placeholder="you@example.com"
                 className="w-full p-3 rounded bg-white/10 text-white placeholder-gray-300 outline-none focus:ring-2 focus:ring-cyan-600"
               />
@@ -38,6 +68,7 @@ const ContactPage = () => {
               <textarea
                 rows="4"
                 placeholder="Write your message..."
+                name="message"
                 className="w-full p-3 rounded bg-white/10 text-white placeholder-gray-300 outline-none focus:ring-2 focus:ring-cyan-600"
               ></textarea>
             </div>

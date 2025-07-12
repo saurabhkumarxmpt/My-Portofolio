@@ -32,7 +32,7 @@ const HomePage = () => {
 
   return (
     <>
-    <div className="bg-[url('./home-page-image.jpg')] min-h-screen bg-cover text-white ">
+    <div className="bg-[url('/home-page-image.jpg')] min-h-screen bg-cover text-white ">
     <Navbar/>
     <div className="pt-28 px-8 md:px-20 lg:px-32 font-roboto text-white flex items-center">
     <div>

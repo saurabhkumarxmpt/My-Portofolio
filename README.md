@@ -1,12 +1,34 @@
-# React + Vite
+# 🌐 My Personal Portfolio & Resume Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio and resume website!  
+This project showcases my skills, projects, and professional journey as a web developer.
 
-Currently, two official plugins are available:
+## 🛠️ Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend:** HTML, CSS, JavaScript  
+- **Frameworks & Libraries:** React, Tailwind CSS  
+- **Build Tool:** Vite  
+- **Version Control:** Git & GitHub
 
-## Expanding the ESLint configuration
+# 📄 Features
+⚡ Responsive Design – Mobile and desktop friendly
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🧩 Reusable Components – Built with React component structure
+
+🎨 Modern Styling – Tailwind CSS for rapid UI design
+
+📬 Contact Form – Let visitors send you a message
+
+🔗 Live Demo
+👉 View Live Site
+
+📬 Contact Me
+Feel free to reach out:
+
+📧 Email: saurabhkumarxmpt@gmail.com
+
+💼 LinkedIn: Saurabh Kumar
+
+📸 Instagram: @sorabhhshd
+
+🐦 Twitter: @SaurabhKum48494
